@@ -26,6 +26,7 @@ header{
     color: orange;
 }
 
+
 /*June added this*/
 .footer {
     position: fixed;
@@ -35,4 +36,8 @@ header{
     background-color: #f1f1f1;
     text-align: center;
     padding: 10px;
+}
+p{
+    font-size: xx-large;
+    font-style: italic;
 }
