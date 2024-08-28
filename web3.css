@@ -25,3 +25,8 @@ header{
 .head:hover{
     color: orange;
 }
+
+p{
+    font-size: xx-large;
+    font-style: italic;
+}
