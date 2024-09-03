@@ -1,59 +1,155 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@400..700&family=Grand+Hotel&display=swap');
+:root {
+    --clr-primary: #a77f7f18;
+    --clr-primary-light: #beed8c;
+    --clr-grey-1: rgba(128, 128, 128, 0.781);
+    --clr-grey-5: #617d98;
+    --clr-grey-10: #f1f5f8;
+    --clr-white: #fff;
+    --ff-primary:"catamaran", sans-serif;
+    --ff-secondary:"grand hotel", cursive;
+    --transition:all 0.3s linear;
+    --spacing:0.25rem;
+    --radius:0.5rem;
+
+
+}
 /*this is a general css style for the webpage*/
 *{
     padding: 10;
     margin: 10;
     box-sizing: border-box;
 }
-
+/* body */
+body {
+    font-family: var(--ff-primary);
+    color: var(--clr-white);
+    line-height: 1.5;
+    font-size: 0.875rm;
+}
+a {
+    text-decoration: none;
+}
+.btn {
+    text-transform: uppercase;
+    background-color: var(--clr-primary-light);
+    color: var(--clr-white);
+    padding: 0.575rem 0.95rem;
+    letter-spacing: var(--spacing);
+    display: inline-block;
+    font-weight: 700;
+    transition: var(--transition);
+    font-size: 0.875rem;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
 /*header style*/
 
 header{
     display: flex;
-    background: gray;
-    height: 100px;
+    background: var(--clr-grey-1);
+    max-height: 10vh;
     width: 100vw;
     align-items: center;
+    cursor: pointer;
 }
 .head{
     display: flex;
-    color: white;
     width: 100vw;
-    height: 100px;
+    height: 20vh;
     align-items: center;
     justify-content: center;
 }
-.head:hover{
-    color: orange;
-}
-
-
-/*June added this*/
-.footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #f1f1f1;
-    text-align: center;
-    padding: 10px;
-}
-p{
-    font-size: xx-large;
+ .head h1 {
+    font-family: var(--ff-primary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
     font-style: italic;
 }
 
 
 /* Timmy added this*/
-.aim{
-    text-align:center;
-    font-family:'Times New Roman', Times, serif;
-    Font-size: 30px;
-    text-decoration: solid;
-    margin-top: 25PX;
-} 
 .focus{
     font-size: 25px;
+    color: black;
 }
 .list{
     font-size: 20px;
+    color: black;
 }
+
+.head:hover{
+    background: var(--clr-primary-light);
+    color: black;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: var(--transition);
+    max-height: 10vh;
+}
+/* main */
+section {
+    background: var(--clr-primary);
+    height: 80vh;
+    width: 100vw;
+    padding: 2rem;
+}
+ .section p {
+    font-size: 1.7rem;
+    color: black;
+    text-align: center;
+    max-width: 60vw;
+    margin: 0 auto;
+    font-family: var(--ff-secondary);
+    letter-spacing: 2px;
+    /*animation: SlideFromRight 4s;*/
+    transition: var(--transition);
+ }
+@keyframes SlideFromRight {
+        0% {
+            transform: translateX(200px);
+            opacity: 0;
+        }
+        50% {
+            transform: translateX(-100px);
+            opacity: 0.5;
+        }
+        100% {
+            transform: translateX(0px);
+            opacity: 1;
+        }
+    }
+ .section-btn {
+    margin-top: 3rem;
+    background: rgb(116, 224, 116);
+    border-radius: var(--radius);
+    outline: 4px solid rgb(116, 224, 116);
+    outline-offset: 0.4rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+ }
+ .section-btn:hover {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    transform: scale(1.1);
+    transition: var(--transition);
+ }
+ /* end of main */
+ /* footer */
+/*June added this*/
+.footer {
+    width: 100vw;
+    background: var(--clr-grey-5);
+    text-align: center;
+    padding: 10px;
+    height: 8vh;
+    cursor: pointer;
+}
+.footer p{
+    font-family: var(--ff-primary);
+    font-style: italic;
+
+}
+.footer:hover {
+    background: blueviolet;
+    color: black;
+}
+/* end of footer */
