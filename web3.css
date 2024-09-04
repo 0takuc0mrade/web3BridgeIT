@@ -17,8 +17,8 @@
 }
 /*this is a general css style for the webpage*/
 *{
-    padding: 0;
-    margin: 0;
+    padding: 10;
+    margin: 10;
     box-sizing: border-box;
 }
 /* body */
@@ -67,6 +67,18 @@ header{
     letter-spacing: 2px;
     font-style: italic;
 }
+
+
+/* Timmy added this*/
+.focus{
+    font-size: 25px;
+    color: black;
+}
+.list{
+    font-size: 20px;
+    color: black;
+}
+
 .head:hover{
     background: var(--clr-primary-light);
     color: black;
