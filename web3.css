@@ -53,6 +53,8 @@ header{
     width: 100vw;
     align-items: center;
     cursor: pointer;
+    position: sticky;
+    top: 0;
 }
 .head{
     display: flex;
